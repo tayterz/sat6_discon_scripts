@@ -4,7 +4,7 @@ declare -i INDEX=0
 
 read -r -a FILELIST <<< $(find /var/lib/pulp/exports/MPO-* -type f)
 declare -i BUNDLE_NUM=1
-BUNDLE_NAME="/var/lib/pulp/exports/bundles/bundle"
+BUNDLE_NAME="/var/lib/pulp/exports/bundles/newbundle"
 
 echo NUM = ${#FILELIST[@]}
 while [ $INDEX -lt ${#FILELIST[@]} ]
